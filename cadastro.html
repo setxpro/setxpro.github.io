@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="pt-br">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8">
@@ -24,6 +24,7 @@
 				<input class="btn" type="submit" name="" value="LOGIN">
 				<div class="options-02">
 					<p>Não esta cadastrado ? <a href="#">Criar uma conta</a></p>
+					<p>Voltar para a página <a href="index.html">inicial</a></p>
 				</div>
 			</form>
 			<!--login form end-->
@@ -42,7 +43,14 @@
 		</div>
 		<!--form area end-->
 
-		<script src="assets/js/jquery.js"></script>
+		<script src="assets/js/script.js"></script>
 
+		<script type="text/javascript">
+			$('.options-02 a').click(function(){
+				$('form').animate({
+					height: "toggle", opacity: "toggle"
+				}, "slow");
+			});
+			</script>
 	</body>
 </html>
