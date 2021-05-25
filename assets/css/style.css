@@ -379,6 +379,7 @@ body{
 }
 
 .services .content .card{
+  display: flex;
   background: #fff;
   width: 340px;
   margin: 10px;
